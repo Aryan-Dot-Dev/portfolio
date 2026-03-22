@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import { Work } from "./pages/Work";
 import { Journey } from "./pages/Journey";
 import { Contact } from "./pages/Contact";
+import { Analytics } from "@vercel/analytics/react";
 
 export function App() {
   const [activePage, setActivePage] = useState("home");
@@ -31,6 +32,7 @@ export function App() {
   return (
     <Layout activePage={activePage} onPageChange={setActivePage}>
       {renderPage()}
+      <Analytics />
     </Layout>
   );
 }

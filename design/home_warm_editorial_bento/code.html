@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SuspiciousDude | Home</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,700;1,400&amp;family=DM+Sans:wght@400;500;700&amp;family=DM+Mono:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-fixed-dim": "#b9d224",
+                        "on-background": "#1d1c13",
+                        "secondary-fixed-dim": "#ffb59f",
+                        "secondary-fixed": "#ffdbd1",
+                        "tertiary-container": "#e7e3d5",
+                        "on-primary-fixed": "#191e00",
+                        "tertiary": "#605f54",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#d5ef43",
+                        "surface-tint": "#576500",
+                        "surface-container-highest": "#e7e2d4",
+                        "on-surface-variant": "#464835",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#af3000",
+                        "inverse-primary": "#b9d224",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#f2eedf",
+                        "surface-variant": "#e7e2d4",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#571300",
+                        "surface-dim": "#dedacb",
+                        "surface": "#fef9ea",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#ede8d9",
+                        "surface-bright": "#fef9ea",
+                        "outline-variant": "#c7c8af",
+                        "background": "#fef9ea",
+                        "primary-container": "#d6f044",
+                        "on-surface": "#1d1c13",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#fd5f2e",
+                        "on-secondary-fixed": "#3a0a00",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f8f3e5",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#862200",
+                        "primary": "#576500",
+                        "outline": "#767962",
+                        "on-primary-fixed-variant": "#414c00",
+                        "inverse-surface": "#323127",
+                        "inverse-on-surface": "#f5f1e2",
+                        "on-primary-container": "#5d6c00",
+                        "tertiary-fixed-dim": "#cac7b9",
+                        "on-tertiary-fixed": "#1d1c13",
+                        "on-tertiary-container": "#67655a",
+                        "tertiary-fixed": "#e6e2d5",
+                        "on-tertiary-fixed-variant": "#48473d"
+                    },
+                    fontFamily: {
+                        "serif": ["Instrument Sans", "serif"],
+                        "sans": ["DM Sans", "sans-serif"],
+                        "mono": ["DM Mono", "monospace"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fef9ea;
+            color: #1d1c13;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+
+<body class="font-sans selection:bg-primary-container selection:text-on-primary-container">
+    <!-- Top Navigation -->
+    <nav
+        class="sticky top-4 z-50 flex items-center justify-between px-6 py-3 w-full max-w-4xl mx-auto bg-surface/80 dark:bg-stone-900/80 backdrop-blur-xl rounded-full mt-4 border border-outline-variant/15 shadow-xl shadow-on-surface/5">
+        <div class="font-serif italic text-xl text-on-surface dark:text-stone-100">SuspiciousDude</div>
+        <div class="hidden md:flex items-center space-x-8">
+            <a class="font-sans text-sm tracking-tight text-on-surface dark:text-white font-bold border-b-2 border-secondary transition-colors"
+                href="#">Home</a>
+            <a class="font-sans text-sm tracking-tight text-on-tertiary-container dark:text-stone-400 hover:text-on-surface transition-colors hover:scale-105 transition-transform duration-300"
+                href="#">Work</a>
+            <a class="font-sans text-sm tracking-tight text-on-tertiary-container dark:text-stone-400 hover:text-on-surface transition-colors hover:scale-105 transition-transform duration-300"
+                href="#">Journey</a>
+            <a class="font-sans text-sm tracking-tight text-on-tertiary-container dark:text-stone-400 hover:text-on-surface transition-colors hover:scale-105 transition-transform duration-300"
+                href="#">Contact</a>
+        </div>
+        <button
+            class="bg-primary-container text-on-primary-container px-5 py-2 rounded-full font-sans text-sm font-bold hover:scale-105 transition-transform duration-300">
+            Let's Talk
+        </button>
+    </nav>
+    <main class="max-w-7xl mx-auto px-6 pt-20 pb-20">
+        <!-- Hero Section: Bento Mosaic -->
+        <div class="bento-grid">
+            <!-- Headline Cell (Large) -->
+            <div
+                class="col-span-12 lg:col-span-8 bg-surface-container-lowest rounded-lg p-8 lg:p-12 relative overflow-hidden flex flex-col justify-end min-h-[500px]">
+                <div class="absolute top-8 left-8 flex items-center gap-2">
+                    <span class="text-secondary text-xl font-serif">◆</span>
+                    <span class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container">Available for
+                        projects</span>
+                </div>
+                <h1
+                    class="font-serif text-5xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tight text-on-surface max-w-3xl">
+                    Crafting <span class="italic text-primary">Tactile</span> Digital <span
+                        class="inline-block relative">Experiences<span
+                            class="absolute -right-8 -top-2 text-secondary text-2xl">◆</span></span>
+                </h1>
+                <p class="mt-8 font-sans text-lg text-on-tertiary-container max-w-xl leading-relaxed">
+                    A multi-disciplinary designer specializing in editorial-driven interfaces and intentional
+                    object-oriented experiences. Currently curating the future of aesthetic utility.
+                </p>
+            </div>
+            <!-- Personality Ticket (Asymmetric Right) -->
+            <div
+                class="col-span-12 lg:col-span-4 bg-surface-container rounded-lg p-8 flex flex-col justify-between border-l-4 border-dashed border-outline-variant/30">
+                <div class="relative w-24 h-24 mb-6">
+                    <div
+                        class="absolute inset-0 bg-secondary-container rounded-full ring-8 ring-secondary-container/20">
+                    </div>
+                    <img class="w-full h-full rounded-full object-cover relative z-10 grayscale contrast-125"
+                        data-alt="Close up portrait of a creative professional"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFAMWoXSD6qV7B5RPj-G-tnD7dzfj_c7ZYrqno3l6uLuj3qn1hwgrlhvk3eVPFYVuV5LLJVSm7zOXJo-ZGtbJLGVyuIbsZ8tJBkP2QL2KVN9nWmhjegpJJgh3dNvg_RXE0DQRuz2aq-hx-482oLbKpcLZU4i8bxzvfYlC5hNPtfwSdf3bdyXcjNlY5KXHSCZDiUKjOis94F98WXqvpUfkG6TRVeb0Woqtux-mz53RdgP0gzOo80rZJuX4tfUXkhB4q0B0zK_w7NVs" />
+                </div>
+                <div>
+                    <div class="font-mono text-[10px] uppercase tracking-widest text-on-tertiary-container mb-2">Curator
+                        Identity</div>
+                    <div class="font-serif text-2xl text-on-surface mb-4">Julian Thorne</div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between py-2 border-b border-outline-variant/20">
+                            <span class="font-mono text-xs text-on-tertiary-container">Location</span>
+                            <span class="font-sans text-sm font-medium">London, UK</span>
+                        </div>
+                        <div class="flex items-center justify-between py-2 border-b border-outline-variant/20">
+                            <span class="font-mono text-xs text-on-tertiary-container">Vibe</span>
+                            <span class="font-sans text-sm font-medium">Brutalist Zen</span>
+                        </div>
+                        <div class="flex items-center justify-between py-2">
+                            <span class="font-mono text-xs text-on-tertiary-container">Drink</span>
+                            <span class="font-sans text-sm font-medium">Oolong Tea</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 flex gap-2">
+                    <div class="w-2 h-2 rounded-full bg-secondary"></div>
+                    <div class="w-2 h-2 rounded-full bg-secondary/40"></div>
+                    <div class="w-2 h-2 rounded-full bg-secondary/10"></div>
+                </div>
+            </div>
+            <!-- Stats Card (Visual Data) -->
+            <div
+                class="col-span-12 md:col-span-6 lg:col-span-4 bg-surface-container-high rounded-lg p-8 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-8">
+                        <span class="material-symbols-outlined text-primary text-3xl">auto_awesome</span>
+                        <span class="font-mono text-xs text-on-tertiary-container">01 // TRACKS</span>
+                    </div>
+                    <div class="font-mono text-5xl font-medium tracking-tighter text-on-surface">12+</div>
+                    <div class="font-sans text-sm text-on-tertiary-container mt-2">Years of design refinement across
+                        industries.</div>
+                </div>
+                <div class="mt-8 bg-surface-container-lowest/50 rounded-xl p-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-1 bg-primary rounded-full"></div>
+                        <div class="w-16 h-1 bg-outline-variant rounded-full"></div>
+                        <div class="w-8 h-1 bg-outline-variant rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Featured Media (Bento Cell) -->
+            <div
+                class="col-span-12 md:col-span-6 lg:col-span-5 rounded-lg overflow-hidden relative group cursor-pointer bg-surface-container-highest">
+                <img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-110"
+                    data-alt="Minimalist architectural lighting and concrete textures"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfykbCyg7Yhy-g-S9sJbxcKJMnmZDwuO1dqqgfjwNrt3n-sAPaBB4eJrcU4ag3NLOH8lAwi5vIBMA9JoYO_7ssQV9uboep2wQ1pHQUy3K25n1opFFMqjXn8mH6WObcpKpJYtKI5BvEBZ7ulXkLKSDwT_6sTzFwquFIdaOcvezK0xc-ewVKTquzfBQQRnAo1eSRJ7_1FzBAWtnuZYnWJXu9osZtcO_H4G4Xf5YQvvr9lst093LPmAumEC3dyiNunB7UhwrKerhqQ94" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent flex flex-col justify-end p-8">
+                    <div class="font-mono text-[10px] uppercase tracking-widest text-surface/60 mb-2">Selected Work
+                    </div>
+                    <div class="font-serif text-2xl text-surface">The Concrete Journal</div>
+                </div>
+                <div
+                    class="absolute top-6 right-6 w-12 h-12 rounded-full bg-surface-container-lowest/20 backdrop-blur-md flex items-center justify-center text-white">
+                    <span class="material-symbols-outlined">north_east</span>
+                </div>
+            </div>
+            <!-- Process Cell (Technical) -->
+            <div
+                class="col-span-12 lg:col-span-3 bg-primary-container rounded-lg p-8 text-on-primary-container flex flex-col justify-between">
+                <div>
+                    <h3 class="font-serif text-2xl leading-tight mb-4">Methodical Curation</h3>
+                    <p class="font-sans text-sm leading-relaxed opacity-80">Every pixel is placed with intentionality,
+                        following a strict grid system balanced by organic textures.</p>
+                </div>
+                <ul class="space-y-2 mt-6">
+                    <li class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider">
+                        <span class="text-on-primary-container font-bold">◆</span> Research
+                    </li>
+                    <li class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider">
+                        <span class="text-on-primary-container font-bold">◆</span> Prototype
+                    </li>
+                    <li class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider">
+                        <span class="text-on-primary-container font-bold">◆</span> Refinement
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Stats Bar (Section 8) -->
+        <div class="mt-24 border-t border-outline-variant/30 pt-12">
+            <div class="flex flex-wrap items-center justify-between gap-12 px-4">
+                <div class="flex flex-col">
+                    <span class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container mb-2">Happy
+                        Clients</span>
+                    <span class="font-mono text-4xl text-on-surface">42<span
+                            class="text-secondary text-2xl">◆</span></span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container mb-2">Projects
+                        Shipped</span>
+                    <span class="font-mono text-4xl text-on-surface">156</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container mb-2">Typefaces
+                        Owned</span>
+                    <span class="font-mono text-4xl text-on-surface">89</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container mb-2">Cups of
+                        Oolong</span>
+                    <span class="font-mono text-4xl text-on-surface">1.2k</span>
+                </div>
+                <div class="max-w-xs">
+                    <p class="font-sans text-sm italic text-on-tertiary-container leading-relaxed">
+                        "Design is not just what it looks like and feels like. Design is how it works."
+                    </p>
+                    <div class="font-mono text-[10px] mt-2 uppercase tracking-widest">— Manifesto No. 04</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4 bg-surface dark:bg-stone-950 full-width pt-20 pb-10">
+        <div class="font-serif text-lg text-on-surface dark:text-stone-200">The Tactile Curator</div>
+        <div class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container dark:text-stone-500">
+            © 2024 The Tactile Curator. All rights reserved.
+        </div>
+        <div class="flex items-center space-x-6">
+            <a class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container dark:text-stone-500 hover:text-primary transition-colors opacity-80 hover:opacity-100"
+                href="#">Twitter</a>
+            <a class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container dark:text-stone-500 hover:text-primary transition-colors opacity-80 hover:opacity-100"
+                href="#">LinkedIn</a>
+            <a class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container dark:text-stone-500 hover:text-primary transition-colors opacity-80 hover:opacity-100"
+                href="#">Read.cv</a>
+        </div>
+    </footer>
+    <!-- Signature FAB Motif (Contextual for Home) -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <button
+            class="w-16 h-16 bg-on-surface text-surface rounded-full shadow-2xl flex items-center justify-center group transition-all duration-300 hover:scale-110 active:scale-95">
+            <span
+                class="material-symbols-outlined text-2xl transition-transform duration-500 group-hover:rotate-12">mail</span>
+        </button>
+    </div>
+</body>
+
+</html>

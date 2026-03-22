@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Projects — SuspiciousDude</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,700;1,400&amp;family=DM+Sans:wght@400;500&amp;family=DM+Mono&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#b9d224",
+            "on-background": "#1d1c13",
+            "secondary-fixed-dim": "#ffb59f",
+            "secondary-fixed": "#ffdbd1",
+            "tertiary-container": "#e7e3d5",
+            "on-primary-fixed": "#191e00",
+            "tertiary": "#605f54",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#d5ef43",
+            "surface-tint": "#576500",
+            "surface-container-highest": "#e7e2d4",
+            "on-surface-variant": "#464835",
+            "on-secondary": "#ffffff",
+            "secondary": "#af3000",
+            "inverse-primary": "#b9d224",
+            "error-container": "#ffdad6",
+            "surface-container": "#f2eedf",
+            "surface-variant": "#e7e2d4",
+            "error": "#ba1a1a",
+            "on-secondary-container": "#571300",
+            "surface-dim": "#dedacb",
+            "surface": "#fef9ea",
+            "on-error-container": "#93000a",
+            "surface-container-high": "#ede8d9",
+            "surface-bright": "#fef9ea",
+            "outline-variant": "#c7c8af",
+            "background": "#fef9ea",
+            "primary-container": "#d6f044",
+            "on-surface": "#1d1c13",
+            "on-primary": "#ffffff",
+            "secondary-container": "#fd5f2e",
+            "on-secondary-fixed": "#3a0a00",
+            "on-error": "#ffffff",
+            "surface-container-low": "#f8f3e5",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed-variant": "#862200",
+            "primary": "#576500",
+            "outline": "#767962",
+            "on-primary-fixed-variant": "#414c00",
+            "inverse-surface": "#323127",
+            "inverse-on-surface": "#f5f1e2",
+            "on-primary-container": "#5d6c00",
+            "tertiary-fixed-dim": "#cac7b9",
+            "on-tertiary-fixed": "#1d1c13",
+            "on-tertiary-container": "#67655a",
+            "tertiary-fixed": "#e6e2d5",
+            "on-tertiary-fixed-variant": "#48473d"
+          },
+          fontFamily: {
+            "headline": ["Instrument Sans", "sans-serif"],
+            "body": ["DM Sans", "sans-serif"],
+            "label": ["DM Mono", "monospace"]
+          },
+          borderRadius: { "DEFAULT": "1rem", "lg": "1.25rem", "xl": "3rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    body {
+      background-color: #fef9ea;
+      color: #1d1c13;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1.5rem;
+    }
+
+    .glass-nav {
+      backdrop-filter: blur(20px);
+    }
+  </style>
+</head>
+
+<body class="selection:bg-primary-container selection:text-on-primary-container">
+  <!-- TopAppBar Navigation Shell -->
+  <nav
+    class="sticky top-4 z-50 flex items-center justify-between px-6 py-3 w-full max-w-4xl mx-auto bg-surface/80 dark:bg-stone-900/80 backdrop-blur-xl rounded-full mt-4 border border-outline-variant/15 shadow-xl shadow-on-surface/5">
+    <div class="font-serif italic text-xl text-on-surface dark:text-stone-100">SuspiciousDude</div>
+    <div class="hidden md:flex items-center gap-8 font-sans text-sm tracking-tight">
+      <a class="text-on-tertiary-container dark:text-stone-400 hover:text-on-surface transition-colors hover:scale-105 transition-transform duration-300"
+        href="#">Home</a>
+      <a class="text-on-surface dark:text-white font-bold border-b-2 border-secondary hover:scale-105 transition-transform duration-300"
+        href="#">Work</a>
+      <a class="text-on-tertiary-container dark:text-stone-400 hover:text-on-surface transition-colors hover:scale-105 transition-transform duration-300"
+        href="#">Journey</a>
+      <a class="text-on-tertiary-container dark:text-stone-400 hover:text-on-surface transition-colors hover:scale-105 transition-transform duration-300"
+        href="#">Contact</a>
+    </div>
+    <button
+      class="bg-primary-container text-on-primary-container px-5 py-2 rounded-full text-sm font-bold hover:scale-105 transition-transform duration-300 active:scale-95 duration-150">
+      Let's Talk
+    </button>
+  </nav>
+  <main class="max-w-7xl mx-auto px-6 pt-24 pb-32">
+    <!-- Header Section -->
+    <header class="mb-16">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-secondary text-xl">◆</span>
+        <span class="font-label text-xs uppercase tracking-widest text-on-tertiary-container">Selected Works</span>
+      </div>
+      <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight mb-8">
+        Building digital <span class="italic font-normal">artifacts</span><br />with soul and precision.
+      </h1>
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap gap-3 mt-12">
+        <button
+          class="px-6 py-2 rounded-full bg-on-surface text-surface font-medium text-sm transition-all">All</button>
+        <button
+          class="px-6 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface text-sm transition-all">Design</button>
+        <button
+          class="px-6 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface text-sm transition-all">Dev</button>
+        <button
+          class="px-6 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface text-sm transition-all">Lab</button>
+      </div>
+    </header>
+    <!-- Bento Grid Projects -->
+    <div class="bento-grid">
+      <!-- Project 1: Featured (Large) -->
+      <div
+        class="col-span-12 md:col-span-8 group relative overflow-hidden rounded-lg bg-surface-container p-8 h-[500px] flex flex-col justify-between transition-all hover:bg-surface-container-high">
+        <div
+          class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-container text-on-primary-container px-8 py-3 rounded-full font-bold shadow-2xl flex items-center gap-2 z-20">
+            View Project <span class="material-symbols-outlined">arrow_forward</span>
+          </div>
+        </div>
+        <div class="relative z-10">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="font-label text-[10px] uppercase tracking-widest text-secondary block mb-2">Featured / UI
+                Design</span>
+              <h3 class="font-headline text-3xl font-bold">The Kinship Archive</h3>
+            </div>
+            <div class="flex gap-2">
+              <span
+                class="font-label text-[10px] px-2 py-1 rounded bg-surface-container-lowest border border-outline-variant/20">Figma</span>
+              <span
+                class="font-label text-[10px] px-2 py-1 rounded bg-surface-container-lowest border border-outline-variant/20">Next.js</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 relative flex-1 rounded-xl overflow-hidden shadow-inner">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            data-alt="Minimalist editorial website interface showing archival photography"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO_LvwFU-V5VtcU-VGlMLrIx2Cj9ibh0suOmpsUC7CY8AuJjw42W-DVhddJI-bRaKgxuAOX-bE4RZYRIh_czBEu9DDY56pubNm03ub-p2pEAUMmpmGAO7n31wb0OMPTR7NkPE24_V7ghZocevB3AhxGg0LH1L0sKCR4rJAG_A2SALmTj7Hi_YNSI9FLuoEmc0mhA-QLyAHC8iXA0pUvqnq967Kc_iBdtBCZyAa71tdNMYgM4Dy5nZDrSb-a6v2TTelsxa55UoyH3A" />
+        </div>
+      </div>
+      <!-- Project 2: Square (Small) -->
+      <div
+        class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-lg bg-surface-container-lowest p-8 h-[500px] flex flex-col transition-all border border-outline-variant/10">
+        <div class="absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <div class="mb-6">
+          <span
+            class="font-label text-[10px] uppercase tracking-widest text-on-tertiary-container block mb-2">Development</span>
+          <h3 class="font-headline text-2xl font-bold">Svelte Motion Engine</h3>
+        </div>
+        <div class="flex-1 rounded-xl overflow-hidden mb-6">
+          <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+            data-alt="Abstract 3D flowing shapes in vibrant lime and charcoal"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDvBzyjvdrl92cnc1RLYK6T5wgD-8gdFJBYsu39VN_i2_3oQfwnmRTv0U9t3JH5qj5L58-dLLaA3BfPcGyrDcrJ5Ntoy7VTiLawNqUmMlex01ndJu2rKiazTUPnylt1gTDqpJtOk4rInLWad9xqRz2zyJwUAmUv6c1RtJo0k1PLmKKv88sosmjLWE5xYwOFiZS-y3uR1ewVjmrMIuLBX8Ik5qmv5907Pj5kaW7FtsfVQ31l-l1QRdW1MPrmbizGEH2JwT7wEa0Qy4" />
+        </div>
+        <div class="flex justify-between items-center mt-auto">
+          <div class="font-label text-[10px] text-on-tertiary-container">2024 Release</div>
+          <div
+            class="bg-primary-container text-on-primary-container p-2 rounded-full opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all">
+            <span class="material-symbols-outlined text-sm">north_east</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3: Vertical (Medium) -->
+      <div
+        class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-lg bg-surface-container-lowest p-8 h-[600px] flex flex-col border border-outline-variant/10">
+        <div class="absolute top-6 right-6 text-secondary text-2xl">◆</div>
+        <div class="mb-8">
+          <span class="font-label text-[10px] uppercase tracking-widest text-on-tertiary-container block mb-2">Lab
+            Experiment</span>
+          <h3 class="font-headline text-2xl font-bold leading-tight">Tactile Typography Experiments</h3>
+        </div>
+        <div class="flex-1 rounded-xl overflow-hidden mb-8">
+          <img class="w-full h-full object-cover" data-alt="Macro photo of textured paper with ink typography"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZVqoK_hLhUnRPIUjnJb5QkC6A5Ue8RBFXZ2KIEFbTDsISD9JdFfnqIWxkdaiRbXYykcqu7mOBT3GC-5pKsZkLebPujcOn9pZFRp8pEu2cup3eAr67rHjm_pFBVZkwBsO6fhoiEkkjt4KyUvFiWuxKBWtcKxMWhSTjeTkL95ne-U5YbxcxJx_HLda4rVW8EpFhu-11VkoQZq1sjKYiRERbLkkNnuwZYRKY_kCsRSf2onkXw_VuWlKZKB4nh0b-sIzzCvCPbT4POrU" />
+        </div>
+        <div class="mt-auto">
+          <p class="text-sm text-on-tertiary-container line-clamp-3 mb-4">A series of digital surfaces designed to mimic
+            the physical sensation of heavy cardstock and letterpress ink.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="font-label text-[10px] px-2 py-1 rounded bg-surface-container">Three.js</span>
+            <span class="font-label text-[10px] px-2 py-1 rounded bg-surface-container">GLSL</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 4: Wide (Medium) -->
+      <div
+        class="col-span-12 md:col-span-8 group relative overflow-hidden rounded-lg bg-surface-container p-8 h-[600px] flex flex-col transition-all hover:bg-surface-container-high">
+        <div class="flex gap-12 h-full">
+          <div class="w-1/3 flex flex-col justify-between py-4">
+            <div>
+              <span
+                class="font-label text-[10px] uppercase tracking-widest text-on-tertiary-container block mb-2">Product
+                Design</span>
+              <h3 class="font-headline text-4xl font-bold mb-4">Nomad OS</h3>
+              <p class="text-sm text-on-tertiary-container">A minimalist operating system for deep work and intentional
+                focus.</p>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-white">
+                  <span class="material-symbols-outlined text-xs">auto_awesome</span>
+                </div>
+                <span class="text-xs font-label">Intuitive Flow</span>
+              </div>
+              <button
+                class="w-full py-3 rounded-full border border-on-surface text-xs font-bold hover:bg-on-surface hover:text-surface transition-colors">
+                Case Study
+              </button>
+            </div>
+          </div>
+          <div class="w-2/3 relative rounded-2xl overflow-hidden shadow-2xl">
+            <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+              data-alt="Clean desk setup with a laptop showing a dark mode interface"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoIwJVCuZFGKzhYu2V-fKLIEjn_prbiOcLVnkwMVrI0jRU2P_YR6gq5HrGJg1j-C5cNionXTZzSmeqwGu7HL2Ifwrs7Yc5LqXE_QXY39PxtKwXbyPIcivcUPlobxRj2vq8o7Nwtzir3PtBTrdXS2h2hEo56oRJbKaAWvNpwtvSFGeuwvAMiKCJUf7CN7vQfWt66XT8gWTqTZ7RjD4iXJdVCjJz6ZjTZlTnB_IWWFY4gBJ3Qdxw3_7XRhDpfdryNl3lp40d9Ljlslo" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 5: Grid Item (Small) -->
+      <div
+        class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-lg bg-surface-container-lowest p-8 h-[400px] flex flex-col border border-outline-variant/10">
+        <span class="font-label text-[10px] uppercase tracking-widest text-on-tertiary-container block mb-2">Visual
+          Arts</span>
+        <h3 class="font-headline text-xl font-bold mb-6">Chroma Studies</h3>
+        <div class="flex-1 bg-surface-dim rounded-xl flex items-center justify-center relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-secondary/20 via-primary/10 to-transparent"></div>
+          <img class="w-full h-full object-cover mix-blend-multiply opacity-60"
+            data-alt="Abstract colorful light leak pattern"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0xsEzGjxcJ4Kouk5z_CFY9SIomnfx7YPV15hB9t9jdH2DaKgaBfNSW-O2rYNd31wmjlgxZr6bjyqnhwMX4KlKbRYVzyvXpigMXHmbIKrO6agZRqylGw8onF71EeLT--XDxVX3zryTy4MNxcMUB1ha9Azaer13-aLnnnnNWuSCkad4OFfjwFOcjyYv5GbM3DAQxWP7zGWJ4kkmwOM0-6lWdx10i0yUqsxPTymMTcXsLNMY401Fxbk7NNZOqBmQWsmDUvASs8IsLRc" />
+          <span class="relative z-10 font-label text-xs uppercase tracking-tighter">Issue #01</span>
+        </div>
+      </div>
+      <!-- Project 6: Grid Item (Small) -->
+      <div
+        class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-lg bg-surface-container p-8 h-[400px] flex flex-col transition-all">
+        <span
+          class="font-label text-[10px] uppercase tracking-widest text-on-tertiary-container block mb-2">Systems</span>
+        <h3 class="font-headline text-xl font-bold mb-6">Pattern Library</h3>
+        <div class="grid grid-cols-3 gap-2 flex-1">
+          <div class="bg-surface-container-highest rounded-md h-12"></div>
+          <div class="bg-primary-container rounded-md h-12"></div>
+          <div class="bg-surface-container-highest rounded-md h-12"></div>
+          <div class="bg-surface-container-highest rounded-md h-12 col-span-2"></div>
+          <div class="bg-secondary-container rounded-md h-12"></div>
+          <div class="bg-surface-container-highest rounded-md h-12"></div>
+          <div class="bg-surface-container-highest rounded-md h-12 col-span-2"></div>
+        </div>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="font-label text-[10px]">Open Source</span>
+          <span class="material-symbols-outlined text-lg">code</span>
+        </div>
+      </div>
+      <!-- Project 7: Grid Item (Small) -->
+      <div
+        class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-lg bg-surface-container-lowest p-8 h-[400px] flex flex-col border border-outline-variant/10">
+        <span
+          class="font-label text-[10px] uppercase tracking-widest text-on-tertiary-container block mb-2">Branding</span>
+        <h3 class="font-headline text-xl font-bold mb-6">Vellum &amp; Ink</h3>
+        <div class="flex-1 rounded-xl overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            data-alt="Letterpress business card on high quality paper texture"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgrBIKCUMOLUBBkbHslegxfsAK0GT2rgGlePwR4MFKMgAnHnkKTLdHKkh1DI8l6xIWDI8CXeb1zm9-mc8T4GKEIs2meq9kzuDtljxh8bbPbLQ1EGffoWiYUZYplvcLY-875Sbsh9G1aN7DgezhRJ8KW-dBTw8bHcj_pwqvOriCqGgkVXmLYRjq00Vx42WfPIaO2rdCZEI6ie3LTUExLnaTfaQKeMpc5phoP6rWwm0gdhJVZCkrYrQa7Q7oPnRO0L171guIdGJ6z2w" />
+        </div>
+      </div>
+    </div>
+    <!-- Pagination / Footer CTA -->
+    <div class="mt-24 text-center">
+      <p class="font-label text-xs uppercase tracking-widest text-on-tertiary-container mb-6">Hungry for more?</p>
+      <a class="inline-flex items-center gap-4 group" href="#">
+        <span class="font-headline text-4xl font-bold group-hover:text-secondary transition-colors">See all
+          experiments</span>
+        <div
+          class="w-12 h-12 rounded-full border border-on-surface flex items-center justify-center group-hover:bg-on-surface group-hover:text-surface transition-all">
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </div>
+      </a>
+    </div>
+  </main>
+  <!-- Footer Shell -->
+  <footer class="bg-surface dark:bg-stone-950 full-width pt-20 pb-10 border-t border-outline-variant/10">
+    <div class="w-full max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="font-serif text-lg text-on-surface dark:text-stone-200">The Tactile Curator</div>
+      <div class="flex gap-8 font-mono text-xs uppercase tracking-widest">
+        <a class="text-on-tertiary-container dark:text-stone-500 hover:text-primary transition-colors transition-colors opacity-80 hover:opacity-100"
+          href="#">Twitter</a>
+        <a class="text-on-tertiary-container dark:text-stone-500 hover:text-primary transition-colors transition-colors opacity-80 hover:opacity-100"
+          href="#">LinkedIn</a>
+        <a class="text-on-tertiary-container dark:text-stone-500 hover:text-primary transition-colors transition-colors opacity-80 hover:opacity-100"
+          href="#">Read.cv</a>
+      </div>
+      <div class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container dark:text-stone-500">
+        © 2024 The Tactile Curator. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

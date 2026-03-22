@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Contact — SuspiciousDude</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;family=DM+Sans:wght@400;500;700&amp;family=DM+Mono:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#b9d224",
+            "on-background": "#1d1c13",
+            "secondary-fixed-dim": "#ffb59f",
+            "secondary-fixed": "#ffdbd1",
+            "tertiary-container": "#e7e3d5",
+            "on-primary-fixed": "#191e00",
+            "tertiary": "#605f54",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#d5ef43",
+            "surface-tint": "#576500",
+            "surface-container-highest": "#e7e2d4",
+            "on-surface-variant": "#464835",
+            "on-secondary": "#ffffff",
+            "secondary": "#af3000",
+            "inverse-primary": "#b9d224",
+            "error-container": "#ffdad6",
+            "surface-container": "#f2eedf",
+            "surface-variant": "#e7e2d4",
+            "error": "#ba1a1a",
+            "on-secondary-container": "#571300",
+            "surface-dim": "#dedacb",
+            "surface": "#fef9ea",
+            "on-error-container": "#93000a",
+            "surface-container-high": "#ede8d9",
+            "surface-bright": "#fef9ea",
+            "outline-variant": "#c7c8af",
+            "background": "#fef9ea",
+            "primary-container": "#d6f044",
+            "on-surface": "#1d1c13",
+            "on-primary": "#ffffff",
+            "secondary-container": "#fd5f2e",
+            "on-secondary-fixed": "#3a0a00",
+            "on-error": "#ffffff",
+            "surface-container-low": "#f8f3e5",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed-variant": "#862200",
+            "primary": "#576500",
+            "outline": "#767962",
+            "on-primary-fixed-variant": "#414c00",
+            "inverse-surface": "#323127",
+            "inverse-on-surface": "#f5f1e2",
+            "on-primary-container": "#5d6c00",
+            "tertiary-fixed-dim": "#cac7b9",
+            "on-tertiary-fixed": "#1d1c13",
+            "on-tertiary-container": "#67655a",
+            "tertiary-fixed": "#e6e2d5",
+            "on-tertiary-fixed-variant": "#48473d"
+          },
+          fontFamily: {
+            "headline": ["Instrument Sans", "sans-serif"],
+            "body": ["DM Sans", "sans-serif"],
+            "label": ["DM Mono", "monospace"]
+          },
+          borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .waveform-bar {
+      animation: wave 1.2s ease-in-out infinite;
+    }
+
+    @keyframes wave {
+
+      0%,
+      100% {
+        height: 4px;
+      }
+
+      50% {
+        height: 24px;
+      }
+    }
+
+    .vinyl-spin {
+      animation: spin 6s linear infinite;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+  <!-- TopAppBar -->
+  <nav
+    class="sticky top-4 z-50 flex items-center justify-between px-6 py-3 w-full max-w-4xl mx-auto bg-surface/80 dark:bg-stone-900/80 backdrop-blur-xl rounded-full mt-4 border border-outline-variant/15 shadow-xl shadow-on-surface/5">
+    <div class="font-serif italic text-xl text-on-surface dark:text-stone-100">SuspiciousDude</div>
+    <div class="hidden md:flex items-center gap-8">
+      <a class="font-sans text-sm tracking-tight text-on-tertiary-container dark:text-stone-400 hover:text-on-surface transition-colors hover:scale-105 transition-transform duration-300"
+        href="#">Home</a>
+      <a class="font-sans text-sm tracking-tight text-on-tertiary-container dark:text-stone-400 hover:text-on-surface transition-colors hover:scale-105 transition-transform duration-300"
+        href="#">Work</a>
+      <a class="font-sans text-sm tracking-tight text-on-tertiary-container dark:text-stone-400 hover:text-on-surface transition-colors hover:scale-105 transition-transform duration-300"
+        href="#">Journey</a>
+      <a class="font-sans text-sm tracking-tight text-on-surface dark:text-white font-bold border-b-2 border-secondary hover:scale-105 transition-transform duration-300"
+        href="#">Contact</a>
+    </div>
+    <button
+      class="bg-primary-container text-on-primary-container px-5 py-2 rounded-full font-sans text-sm font-bold hover:scale-105 transition-transform duration-300 active:scale-95">Let's
+      Talk</button>
+  </nav>
+  <main class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <!-- Hero Header -->
+    <header class="mb-16 md:mb-24 max-w-3xl">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-secondary text-xl">◆</span>
+        <span class="font-label text-xs uppercase tracking-widest text-on-tertiary-container">Available for Q4
+          2024</span>
+      </div>
+      <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-on-surface mb-8">
+        Let’s shape the next <span class="italic font-normal">tangible</span> experience.
+      </h1>
+      <p class="text-xl text-on-tertiary-container leading-relaxed">
+        Whether it's a digital ecosystem or a physical exhibition, I'm always open to discussing intentional design and
+        tactile storytelling.
+      </p>
+    </header>
+    <!-- Bento Grid Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+      <!-- Left Column: Personality & Music -->
+      <div class="md:col-span-5 flex flex-col gap-6">
+        <!-- Music Section -->
+        <div class="bg-surface-container rounded-lg p-8 relative overflow-hidden group">
+          <div class="flex justify-between items-start mb-12">
+            <div>
+              <span class="font-label text-xs text-on-tertiary-container uppercase tracking-widest block mb-2">Currently
+                Spinng</span>
+              <h3 class="font-headline text-2xl font-bold">In Rainbows</h3>
+              <p class="text-on-tertiary-container">Radiohead</p>
+            </div>
+            <div class="relative w-20 h-20 flex items-center justify-center">
+              <div class="absolute inset-0 border-4 border-secondary-container rounded-full vinyl-spin"></div>
+              <div class="w-16 h-16 rounded-full bg-on-surface flex items-center justify-center overflow-hidden">
+                <img alt="Album Cover" class="w-full h-full object-cover opacity-80"
+                  data-alt="Abstract colorful music album cover art"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9m40fvUw4lGFWtrmmy-kvLL8DU1kB3chRsz-ZDukEFz4uW6_12z_JDquirUzfC6YkmcLz6URV9ieA-lKiDauZ3xVthnAEz1NeFlyHjzzy4-xqQJa6uEk-QnzK0fIkm-w92ArEUavHcQnIX4EH2dBli3VnrGdMj502Gy3ZASX983LMtFzSMGyi1bvhU3l7AZ-hwBmbBhsK38jZsagOysSD5siYL_K8KWIOpLxXwbaQX-ij_NBZixMs3byMXm5hIBKHGqHO1GGAvjE" />
+              </div>
+              <div class="absolute w-3 h-3 bg-surface rounded-full border-2 border-on-surface"></div>
+            </div>
+          </div>
+          <div class="flex items-end gap-1 h-8">
+            <div class="waveform-bar w-1.5 bg-secondary rounded-full" style="animation-delay: 0.1s"></div>
+            <div class="waveform-bar w-1.5 bg-secondary rounded-full" style="animation-delay: 0.3s"></div>
+            <div class="waveform-bar w-1.5 bg-secondary rounded-full" style="animation-delay: 0.2s"></div>
+            <div class="waveform-bar w-1.5 bg-secondary rounded-full" style="animation-delay: 0.5s"></div>
+            <div class="waveform-bar w-1.5 bg-secondary rounded-full" style="animation-delay: 0.4s"></div>
+            <div class="waveform-bar w-1.5 bg-secondary rounded-full" style="animation-delay: 0.6s"></div>
+            <div class="waveform-bar w-1.5 bg-secondary rounded-full" style="animation-delay: 0.1s"></div>
+            <div class="waveform-bar w-1.5 bg-secondary rounded-full" style="animation-delay: 0.3s"></div>
+          </div>
+        </div>
+        <!-- Games / Personality -->
+        <div class="bg-surface-container-high rounded-lg p-8">
+          <span class="font-label text-xs text-on-tertiary-container uppercase tracking-widest block mb-6">Off-duty
+            Pursuits</span>
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-secondary border border-outline-variant/20">
+                <span class="material-symbols-outlined">sports_esports</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-on-surface">Elden Ring</h4>
+                <p class="text-sm text-on-tertiary-container">Current obsession &amp; exploration</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-secondary border border-outline-variant/20">
+                <span class="material-symbols-outlined">menu_book</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-on-surface">Design as Art</h4>
+                <p class="text-sm text-on-tertiary-container">Bruno Munari (Re-reading)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right Column: Booking Widget -->
+      <div class="md:col-span-7">
+        <div
+          class="bg-surface-container-lowest rounded-lg p-1 border border-outline-variant/15 shadow-sm h-full flex flex-col">
+          <div class="p-8 border-b border-outline-variant/15">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-headline text-2xl font-bold">Book a Consultation</h3>
+              <span
+                class="px-3 py-1 bg-primary-container text-on-primary-container rounded-full font-label text-[10px] uppercase tracking-tighter font-bold">Active</span>
+            </div>
+            <p class="text-on-tertiary-container">Select a time that works for a 30-minute introductory call.</p>
+          </div>
+          <!-- Placeholder for Cal.com Widget Integration -->
+          <div class="flex-grow bg-surface-container-low/50 rounded-b-lg p-6 min-h-[400px] flex flex-col">
+            <div class="grid grid-cols-7 gap-2 mb-8">
+              <!-- Calendar Header Mockup -->
+              <div class="text-center font-label text-[10px] text-on-tertiary-container">MON</div>
+              <div class="text-center font-label text-[10px] text-on-tertiary-container">TUE</div>
+              <div class="text-center font-label text-[10px] text-on-tertiary-container">WED</div>
+              <div class="text-center font-label text-[10px] text-on-tertiary-container">THU</div>
+              <div class="text-center font-label text-[10px] text-on-tertiary-container">FRI</div>
+              <div class="text-center font-label text-[10px] text-on-tertiary-container text-outline">SAT</div>
+              <div class="text-center font-label text-[10px] text-on-tertiary-container text-outline">SUN</div>
+              <!-- Calendar Days Mockup -->
+              <div class="aspect-square flex items-center justify-center text-sm opacity-20">26</div>
+              <div class="aspect-square flex items-center justify-center text-sm opacity-20">27</div>
+              <div class="aspect-square flex items-center justify-center text-sm opacity-20">28</div>
+              <div
+                class="aspect-square flex items-center justify-center text-sm bg-on-surface text-surface rounded-full font-bold">
+                01</div>
+              <div
+                class="aspect-square flex items-center justify-center text-sm hover:bg-surface-container-high rounded-full cursor-pointer">
+                02</div>
+              <div class="aspect-square flex items-center justify-center text-sm text-outline">03</div>
+              <div class="aspect-square flex items-center justify-center text-sm text-outline">04</div>
+            </div>
+            <div class="space-y-3">
+              <div
+                class="p-4 rounded-xl border border-outline-variant/20 flex justify-between items-center hover:bg-surface-container transition-colors cursor-pointer group">
+                <span class="font-label">09:00 AM — 09:30 AM</span>
+                <span
+                  class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+              </div>
+              <div
+                class="p-4 rounded-xl border border-outline-variant/20 flex justify-between items-center hover:bg-surface-container transition-colors cursor-pointer group">
+                <span class="font-label">11:30 AM — 12:00 PM</span>
+                <span
+                  class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+              </div>
+              <div
+                class="p-4 rounded-xl border border-outline-variant/20 flex justify-between items-center hover:bg-surface-container transition-colors cursor-pointer group">
+                <span class="font-label">02:00 PM — 02:30 PM</span>
+                <span
+                  class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+              </div>
+            </div>
+            <div class="mt-auto pt-6 text-center">
+              <p class="text-[10px] font-label text-on-tertiary-container uppercase tracking-widest">Integrated via
+                Cal.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Full Width Section: Direct Email & Socials -->
+      <div class="md:col-span-12 mt-12">
+        <div class="bg-surface-container p-12 rounded-lg flex flex-col md:flex-row items-center justify-between gap-12">
+          <div class="max-w-md text-center md:text-left">
+            <h2 class="font-headline text-3xl font-bold mb-4">Old-school inquiry?</h2>
+            <p class="text-on-tertiary-container mb-6">I still check my inbox daily. Feel free to drop a line for
+              collaborations or just to say hello.</p>
+            <a class="inline-flex items-center gap-3 group" href="mailto:hello@tactilecurator.com">
+              <span
+                class="font-label text-xl underline underline-offset-8 decoration-secondary group-hover:text-secondary transition-colors">hello@tactilecurator.com</span>
+              <span
+                class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">north_east</span>
+            </a>
+          </div>
+          <!-- Social Links Row -->
+          <div class="flex flex-wrap justify-center gap-4">
+            <a class="px-8 py-4 rounded-full bg-surface-container-lowest border border-outline-variant/10 hover:border-secondary transition-all flex items-center gap-2 group"
+              href="#">
+              <span class="font-label text-xs uppercase tracking-widest">Twitter</span>
+              <span class="text-secondary opacity-0 group-hover:opacity-100 transition-opacity">◆</span>
+            </a>
+            <a class="px-8 py-4 rounded-full bg-surface-container-lowest border border-outline-variant/10 hover:border-secondary transition-all flex items-center gap-2 group"
+              href="#">
+              <span class="font-label text-xs uppercase tracking-widest">LinkedIn</span>
+              <span class="text-secondary opacity-0 group-hover:opacity-100 transition-opacity">◆</span>
+            </a>
+            <a class="px-8 py-4 rounded-full bg-surface-container-lowest border border-outline-variant/10 hover:border-secondary transition-all flex items-center gap-2 group"
+              href="#">
+              <span class="font-label text-xs uppercase tracking-widest">Read.cv</span>
+              <span class="text-secondary opacity-0 group-hover:opacity-100 transition-opacity">◆</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-surface dark:bg-stone-950 full-width pt-20 pb-10 border-t border-outline-variant/5">
+    <div class="w-full max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="font-serif text-lg text-on-surface dark:text-stone-200">The Tactile Curator</div>
+      <div class="flex gap-8">
+        <a class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container dark:text-stone-500 hover:text-primary transition-colors"
+          href="#">Twitter</a>
+        <a class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container dark:text-stone-500 hover:text-primary transition-colors"
+          href="#">LinkedIn</a>
+        <a class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container dark:text-stone-500 hover:text-primary transition-colors"
+          href="#">Read.cv</a>
+      </div>
+      <p class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container dark:text-stone-500">
+        © 2024 The Tactile Curator. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

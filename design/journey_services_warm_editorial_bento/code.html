@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Journey &amp; Services | SuspiciousDude</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&amp;family=DM+Sans:wght@400;500;700&amp;family=DM+Mono:wght@400;500&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#b9d224",
+            "on-background": "#1d1c13",
+            "secondary-fixed-dim": "#ffb59f",
+            "secondary-fixed": "#ffdbd1",
+            "tertiary-container": "#e7e3d5",
+            "on-primary-fixed": "#191e00",
+            "tertiary": "#605f54",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#d5ef43",
+            "surface-tint": "#576500",
+            "surface-container-highest": "#e7e2d4",
+            "on-surface-variant": "#464835",
+            "on-secondary": "#ffffff",
+            "secondary": "#af3000",
+            "inverse-primary": "#b9d224",
+            "error-container": "#ffdad6",
+            "surface-container": "#f2eedf",
+            "surface-variant": "#e7e2d4",
+            "error": "#ba1a1a",
+            "on-secondary-container": "#571300",
+            "surface-dim": "#dedacb",
+            "surface": "#fef9ea",
+            "on-error-container": "#93000a",
+            "surface-container-high": "#ede8d9",
+            "surface-bright": "#fef9ea",
+            "outline-variant": "#c7c8af",
+            "background": "#fef9ea",
+            "primary-container": "#d6f044",
+            "on-surface": "#1d1c13",
+            "on-primary": "#ffffff",
+            "secondary-container": "#fd5f2e",
+            "on-secondary-fixed": "#3a0a00",
+            "on-error": "#ffffff",
+            "surface-container-low": "#f8f3e5",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed-variant": "#862200",
+            "primary": "#576500",
+            "outline": "#767962",
+            "on-primary-fixed-variant": "#414c00",
+            "inverse-surface": "#323127",
+            "inverse-on-surface": "#f5f1e2",
+            "on-primary-container": "#5d6c00",
+            "tertiary-fixed-dim": "#cac7b9",
+            "on-tertiary-fixed": "#1d1c13",
+            "on-tertiary-container": "#67655a",
+            "tertiary-fixed": "#e6e2d5",
+            "on-tertiary-fixed-variant": "#48473d"
+          },
+          fontFamily: {
+            "serif": ["Instrument Sans", "serif"],
+            "sans": ["DM Sans", "sans-serif"],
+            "mono": ["DM Mono", "monospace"]
+          },
+          borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+    }
+
+    .paper-texture {
+      background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDCwWEjWowZEEqwEypmnBwdUHKCTlGBrtUDQ2Qx9Oxb2d9XzzDOWOU_VfmzFHQMG1wllmRfXSdhpOO9OabsuUGpznN589xMVsbvdC68Mkf16-GcEh8ryzxmBS7cExDd5he52WE0bc4O_U6SSYYSrXouR4nUnxL1BlqEVwCdJT7S_d5Kc_AWZw_XND2iZoqHbC6LkrOh0k0SL2aE1iKcVfmYczq6P5EfbQ9Lg64tBjMCFxiNqO2X7EWUGQRmFDeSZDlHqVvxsZJnv94)
+    }
+  </style>
+</head>
+
+<body
+  class="bg-surface text-on-surface font-sans selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden paper-texture">
+  <!-- Top Navigation Anchor -->
+  <header
+    class="sticky top-4 z-50 flex items-center justify-between px-6 py-3 w-full max-w-4xl mx-auto bg-surface/80 dark:bg-stone-900/80 backdrop-blur-xl rounded-full mt-4 border border-outline-variant/15 shadow-xl shadow-on-surface/5">
+    <div class="font-serif italic text-xl text-on-surface dark:text-stone-100">SuspiciousDude</div>
+    <nav class="hidden md:flex items-center gap-8">
+      <a class="text-on-tertiary-container dark:text-stone-400 hover:text-on-surface transition-colors font-sans text-sm tracking-tight hover:scale-105 transition-transform duration-300"
+        href="#">Home</a>
+      <a class="text-on-tertiary-container dark:text-stone-400 hover:text-on-surface transition-colors font-sans text-sm tracking-tight hover:scale-105 transition-transform duration-300"
+        href="#">Work</a>
+      <a class="text-on-surface dark:text-white font-bold border-b-2 border-secondary font-sans text-sm tracking-tight hover:scale-105 transition-transform duration-300"
+        href="#">Journey</a>
+      <a class="text-on-tertiary-container dark:text-stone-400 hover:text-on-surface transition-colors font-sans text-sm tracking-tight hover:scale-105 transition-transform duration-300"
+        href="#">Contact</a>
+    </nav>
+    <button
+      class="bg-primary-container text-on-primary-container px-5 py-2 rounded-full font-sans text-sm font-bold hover:scale-105 transition-all active:scale-95 duration-150">Let's
+      Talk</button>
+  </header>
+  <main class="max-w-7xl mx-auto px-6 py-20 space-y-32">
+    <!-- Section: Work Journey -->
+    <section class="relative" id="journey">
+      <div class="flex flex-col md:flex-row gap-12 lg:gap-24">
+        <!-- Sidebar Header -->
+        <div class="md:w-1/3 sticky top-32 h-fit">
+          <span class="font-mono text-xs uppercase tracking-widest text-secondary flex items-center gap-2 mb-4">
+            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">diamond</span>
+            Evolution
+          </span>
+          <h1 class="font-serif text-5xl lg:text-7xl font-bold leading-tight tracking-tight mb-6">The Journey <br />So
+            Far</h1>
+          <p class="text-on-tertiary-container text-lg leading-relaxed max-w-sm">
+            A decade spent at the intersection of tactile design and digital precision. Each node marks a pivotal shift
+            in my creative philosophy.
+          </p>
+        </div>
+        <!-- Timeline Spine & Content -->
+        <div class="md:w-2/3 relative pl-8 md:pl-0">
+          <!-- Dashed Spine -->
+          <div
+            class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px border-l-2 border-dashed border-outline-variant/40 -translate-x-1/2 hidden md:block">
+          </div>
+          <div class="space-y-24 relative">
+            <!-- Node 1: Present -->
+            <div class="relative flex flex-col md:flex-row md:items-center">
+              <div
+                class="absolute -left-10 md:left-1/2 md:-translate-x-1/2 top-0 w-5 h-5 bg-surface border-4 border-secondary rounded-full z-10 shadow-[0_0_15px_rgba(175,48,0,0.3)] animate-pulse">
+              </div>
+              <div class="md:w-1/2 md:pr-16 text-left md:text-right">
+                <span class="font-mono text-xs text-on-tertiary-container">2023 — Present</span>
+                <h3 class="font-serif text-2xl font-bold mt-2">Design Lead @ Tactile Labs</h3>
+                <p class="mt-4 text-on-tertiary-container leading-relaxed">Pioneering sensory-first digital interfaces
+                  for independent media brands. Focusing on intentionality over engagement metrics.</p>
+              </div>
+              <div class="md:w-1/2 hidden md:block"></div>
+            </div>
+            <!-- Node 2: The Shift -->
+            <div class="relative flex flex-col md:flex-row md:items-center">
+              <div
+                class="absolute -left-10 md:left-1/2 md:-translate-x-1/2 top-0 w-5 h-5 bg-surface border-4 border-outline rounded-full z-10">
+              </div>
+              <div class="md:w-1/2 hidden md:block"></div>
+              <div class="md:w-1/2 md:pl-16">
+                <span class="font-mono text-xs text-on-tertiary-container">2020 — 2022</span>
+                <h3 class="font-serif text-2xl font-bold mt-2">Senior Product Curator</h3>
+                <p class="mt-4 text-on-tertiary-container leading-relaxed">Defined the visual language for a suite of
+                  archival tools. Introduced the "paper-canvas" framework that won several industry awards.</p>
+              </div>
+            </div>
+            <!-- Node 3: Early Mastery -->
+            <div class="relative flex flex-col md:flex-row md:items-center">
+              <div
+                class="absolute -left-10 md:left-1/2 md:-translate-x-1/2 top-0 w-5 h-5 bg-surface border-4 border-outline rounded-full z-10">
+              </div>
+              <div class="md:w-1/2 md:pr-16 text-left md:text-right">
+                <span class="font-mono text-xs text-on-tertiary-container">2017 — 2019</span>
+                <h3 class="font-serif text-2xl font-bold mt-2">Visual Designer @ Paper+Ink</h3>
+                <p class="mt-4 text-on-tertiary-container leading-relaxed">Mastering the transition from high-end print
+                  editorial to responsive web ecosystems. Deep dive into typography-first layouts.</p>
+              </div>
+              <div class="md:w-1/2 hidden md:block"></div>
+            </div>
+            <!-- Node 4: Foundations -->
+            <div class="relative flex flex-col md:flex-row md:items-center pb-8">
+              <div
+                class="absolute -left-10 md:left-1/2 md:-translate-x-1/2 top-0 w-5 h-5 bg-surface border-4 border-outline rounded-full z-10">
+              </div>
+              <div class="md:w-1/2 hidden md:block"></div>
+              <div class="md:w-1/2 md:pl-16">
+                <span class="font-mono text-xs text-on-tertiary-container">2014 — 2016</span>
+                <h3 class="font-serif text-2xl font-bold mt-2">Freelance Identity Designer</h3>
+                <p class="mt-4 text-on-tertiary-container leading-relaxed">Building visual foundations for boutique
+                  studios and artisans. Learning the value of the "collector's mark."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Services Bento Grid -->
+    <section class="space-y-12" id="services">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span
+          class="font-mono text-xs uppercase tracking-widest text-primary-fixed-variant bg-primary-container px-3 py-1 rounded-full mb-4 inline-block">Capabilities</span>
+        <h2 class="font-serif text-4xl md:text-5xl font-bold tracking-tight">Services &amp; Expertise</h2>
+        <p class="text-on-tertiary-container mt-4 leading-relaxed">Custom-tailored solutions for brands that value
+          aesthetic longevity and technical rigor.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1: Creative Direction -->
+        <div
+          class="group bg-surface-container rounded-lg p-8 flex flex-col justify-between h-[320px] hover:bg-surface-container-high transition-all duration-500 hover:-translate-y-1">
+          <div>
+            <div
+              class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface group-hover:bg-primary-container group-hover:text-on-primary-container group-hover:border-transparent transition-all duration-300 mb-6">
+              <span class="material-symbols-outlined">auto_awesome</span>
+            </div>
+            <h4 class="font-serif text-2xl font-bold group-hover:text-primary transition-colors">Creative Direction</h4>
+            <p class="text-on-tertiary-container text-sm mt-3 leading-relaxed">Holistic vision for brand experiences
+              across all physical and digital touchpoints.</p>
+          </div>
+          <div class="font-mono text-[10px] uppercase tracking-widest text-on-tertiary-container/60">Module — 01</div>
+        </div>
+        <!-- Card 2: Editorial Web Design -->
+        <div
+          class="group bg-surface-container-highest rounded-lg p-8 flex flex-col justify-between h-[320px] hover:bg-surface-container-high transition-all duration-500 hover:-translate-y-1 md:col-span-2 relative overflow-hidden">
+          <div class="relative z-10">
+            <div
+              class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface group-hover:bg-primary-container group-hover:text-on-primary-container group-hover:border-transparent transition-all duration-300 mb-6">
+              <span class="material-symbols-outlined">menu_book</span>
+            </div>
+            <h4 class="font-serif text-2xl font-bold group-hover:text-primary transition-colors">Editorial Web Design
+            </h4>
+            <p class="text-on-tertiary-container text-sm mt-3 max-w-sm leading-relaxed">Websites that read like
+              magazines and feel like paper. Optimized for typography and white space.</p>
+          </div>
+          <div class="font-mono text-[10px] uppercase tracking-widest text-on-tertiary-container/60 relative z-10">
+            Module — 02</div>
+          <!-- Abstract Shape Overlay -->
+          <div
+            class="absolute -right-10 -bottom-10 w-48 h-48 bg-primary-container/10 rounded-full blur-3xl group-hover:bg-primary-container/30 transition-all duration-700">
+          </div>
+        </div>
+        <!-- Card 3: Brand Identity -->
+        <div
+          class="group bg-surface-container-highest rounded-lg p-8 flex flex-col justify-between h-[320px] hover:bg-surface-container-high transition-all duration-500 hover:-translate-y-1 md:col-span-2 relative overflow-hidden">
+          <div class="relative z-10">
+            <div
+              class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface group-hover:bg-primary-container group-hover:text-on-primary-container group-hover:border-transparent transition-all duration-300 mb-6">
+              <span class="material-symbols-outlined">fingerprint</span>
+            </div>
+            <h4 class="font-serif text-2xl font-bold group-hover:text-primary transition-colors">Visual Identity</h4>
+            <p class="text-on-tertiary-container text-sm mt-3 max-w-sm leading-relaxed">Crafting unique "Collector's
+              Marks" that withstand the test of time and trends.</p>
+          </div>
+          <div class="font-mono text-[10px] uppercase tracking-widest text-on-tertiary-container/60 relative z-10">
+            Module — 03</div>
+          <!-- Abstract Image Mock -->
+          <div
+            class="absolute top-1/2 -right-4 -translate-y-1/2 w-40 h-40 opacity-10 group-hover:opacity-20 transition-opacity">
+            <img alt="Minimalist geometric branding pattern" class="w-full h-full object-cover grayscale"
+              data-alt="Minimalist geometric abstract branding patterns"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiE_P4J9AIEI65bHBmk1Z7iyOgBRVWqLQgu0rohlj4p33JIPnvoorg9icpkvEQRIz1ime-nnbC8ANWhrSGyNWkp2wSfFZS-65YD4HaQ8YbQFBZOy-j2cAgBXqDOKGs9nCkkKt1TQ66wLsJ5EqhEnEYMv2sQf3ayTEXa1FYLVG7meGP3cV57st_pZx0HsE1Pw00NB4qiJxby_ccXcXQ2uFxozBEzM8-9PslQuKVdYDCK9iyydPZBYuYcHiHMcTUXyo7JsxzM-F-FnE" />
+          </div>
+        </div>
+        <!-- Card 4: Product Strategy -->
+        <div
+          class="group bg-surface-container rounded-lg p-8 flex flex-col justify-between h-[320px] hover:bg-surface-container-high transition-all duration-500 hover:-translate-y-1">
+          <div>
+            <div
+              class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface group-hover:bg-primary-container group-hover:text-on-primary-container group-hover:border-transparent transition-all duration-300 mb-6">
+              <span class="material-symbols-outlined">architecture</span>
+            </div>
+            <h4 class="font-serif text-2xl font-bold group-hover:text-primary transition-colors">Product Architecture
+            </h4>
+            <p class="text-on-tertiary-container text-sm mt-3 leading-relaxed">Structuring complex information into
+              intuitive, low-friction digital journeys.</p>
+          </div>
+          <div class="font-mono text-[10px] uppercase tracking-widest text-on-tertiary-container/60">Module — 04</div>
+        </div>
+        <!-- Card 5: Motion Design -->
+        <div
+          class="group bg-surface-container rounded-lg p-8 flex flex-col justify-between h-[320px] hover:bg-surface-container-high transition-all duration-500 hover:-translate-y-1">
+          <div>
+            <div
+              class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface group-hover:bg-primary-container group-hover:text-on-primary-container group-hover:border-transparent transition-all duration-300 mb-6">
+              <span class="material-symbols-outlined">motion_sensor_active</span>
+            </div>
+            <h4 class="font-serif text-2xl font-bold group-hover:text-primary transition-colors">Subtle Motion</h4>
+            <p class="text-on-tertiary-container text-sm mt-3 leading-relaxed">Meaningful interactions that guide the
+              user without overwhelming the content.</p>
+          </div>
+          <div class="font-mono text-[10px] uppercase tracking-widest text-on-tertiary-container/60">Module — 05</div>
+        </div>
+        <!-- Card 6: Type Design -->
+        <div
+          class="group bg-surface-container-highest rounded-lg p-8 flex flex-col justify-between h-[320px] hover:bg-surface-container-high transition-all duration-500 hover:-translate-y-1 md:col-span-2 relative overflow-hidden">
+          <div class="relative z-10">
+            <div
+              class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface group-hover:bg-primary-container group-hover:text-on-primary-container group-hover:border-transparent transition-all duration-300 mb-6">
+              <span class="material-symbols-outlined">text_fields</span>
+            </div>
+            <h4 class="font-serif text-2xl font-bold group-hover:text-primary transition-colors">Typographic Curation
+            </h4>
+            <p class="text-on-tertiary-container text-sm mt-3 max-w-sm leading-relaxed">Bespoke font pairings and custom
+              lettering that give your brand a distinct voice.</p>
+          </div>
+          <div class="font-mono text-[10px] uppercase tracking-widest text-on-tertiary-container/60 relative z-10">
+            Module — 06</div>
+        </div>
+      </div>
+    </section>
+    <!-- Signature Motif Callout -->
+    <section class="bg-surface-container-low rounded-xl p-12 md:p-20 text-center border border-outline-variant/15">
+      <div class="text-secondary mb-8 text-4xl">◆</div>
+      <h2 class="font-serif text-3xl md:text-5xl font-bold max-w-3xl mx-auto leading-tight italic">"The details are not
+        the details. They make the design."</h2>
+      <div class="mt-12 flex flex-col md:flex-row items-center justify-center gap-4">
+        <button
+          class="bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-sans text-base font-bold hover:scale-105 transition-all shadow-lg shadow-primary-container/20">Start
+          a Project</button>
+        <button
+          class="bg-transparent border border-outline-variant text-on-surface px-8 py-4 rounded-full font-sans text-base font-medium hover:bg-surface-container transition-all">Download
+          Portfolio</button>
+      </div>
+    </section>
+  </main>
+  <!-- Footer Anchor -->
+  <footer
+    class="w-full max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4 full-width pt-20 pb-10 bg-surface dark:bg-stone-950">
+    <div class="font-serif text-lg text-on-surface dark:text-stone-200">The Tactile Curator</div>
+    <div class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container dark:text-stone-500">
+      © 2024 The Tactile Curator. All rights reserved.
+    </div>
+    <div class="flex items-center gap-6">
+      <a class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container dark:text-stone-500 hover:text-primary transition-colors opacity-80 hover:opacity-100"
+        href="#">Twitter</a>
+      <a class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container dark:text-stone-500 hover:text-primary transition-colors opacity-80 hover:opacity-100"
+        href="#">LinkedIn</a>
+      <a class="font-mono text-xs uppercase tracking-widest text-on-tertiary-container dark:text-stone-500 hover:text-primary transition-colors opacity-80 hover:opacity-100"
+        href="#">Read.cv</a>
+    </div>
+  </footer>
+</body>
+
+</html>

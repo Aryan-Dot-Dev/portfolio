@@ -6,6 +6,7 @@ import { Work } from "./pages/Work";
 import { Journey } from "./pages/Journey";
 import { Contact } from "./pages/Contact";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 export function App() {
   const [activePage, setActivePage] = useState("home");
@@ -33,6 +34,7 @@ export function App() {
     <Layout activePage={activePage} onPageChange={setActivePage}>
       {renderPage()}
       <Analytics />
+      <SpeedInsights />
     </Layout>
   );
 }
